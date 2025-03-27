@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .card {
+            border: 3px solid black;
+            padding: 10px;
+            text-align: left;
+            width: 250px;
+            background: #f9f9f9;
+        }
+        .card img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engineering Colleges</h1>
+    <h2>Library Users</h2>
+    <div class="container" id="userContainer"></div>
+
+    <script>
+       function loadXML() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "vhernielyn_aquino.xml", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var parser = new DOMParser();
+            var xml = parser.parseFromString(xhr.responseText, "text/xml");
+            displayUsers(xml);
+        }
+    };
+    xhr.send();
+}
+
+function displayUsers(xml) {
+    const users = xml.getElementsByTagName("user");
+    const container = document.getElementById("userContainer");
+
+    for (let i = 0; i < users.length; i++) {
+        let picture = users[i].getElementsByTagName("picture")[0].textContent;
+        let name = users[i].getElementsByTagName("name")[0].textContent;
+        let course = users[i].getElementsByTagName("course")[0].textContent;
+        let yearSection = users[i].getElementsByTagName("year_section")[0].textContent;
+        let adviser = users[i].getElementsByTagName("adviser")[0].textContent;
+        let schoolYear = users[i].getElementsByTagName("school_year")[0].textContent;
+
+        let card = document.createElement("div");
+        card.classList.add("card");
+        card.innerHTML = `
+            <img src="${picture}" alt="Profile Picture">
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Course:</strong> ${course}</p>
+            <p><strong>Year Level / Section:</strong> ${yearSection}</p>
+            <p><strong>Adviser:</strong> ${adviser}</p>
+            <p><strong>School Year:</strong> ${schoolYear}</p>
+        `;
+        container.appendChild(card);
+    }
+}
+
+window.onload = loadXML;
+
+    </script>
+</body>
+</html>

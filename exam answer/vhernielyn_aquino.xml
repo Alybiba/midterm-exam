@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library_users>
+    <user>
+        <picture>images/bogum.jpg</picture>
+        <name>Leon Peralta</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/byonwooseok.jpg</picture>
+        <name>Pedro Santos</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/hyunjin.jpg</picture>
+        <name>Mark Villanueva</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/jeonghan.jpg</picture>
+        <name>Carl Mendoza</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/jun.jpg</picture>
+        <name>Daniel Garcia</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/minghao.jpg</picture>
+        <name>Joseph Reyes</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/minhyung.jpg</picture>
+        <name>Raymond Fernandez</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/minyu.jpg</picture>
+        <name>Samuel Cruz</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/wonwoo.jpg</picture>
+        <name>Matthew Dizon</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+    <user>
+        <picture>images/dk.jpg</picture>
+        <name>Gabriel Torres</name>
+        <course>BSIT</course>
+        <year_section>3bg2</year_section>
+        <adviser>Mr. Ramon Dela Cruz</adviser>
+        <school_year>2025-2026</school_year>
+    </user>
+</library_users>
